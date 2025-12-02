@@ -33,7 +33,7 @@ class HistoryFragment : Fragment() {
             ),
             History(
                 angka = 3,
-                hukuman = "Upload foto selfie",
+                hukuman = "Upload foto selfie terjelek",
                 tanggal = "15 Januari 2025, 15.30"
             ),
             History(
