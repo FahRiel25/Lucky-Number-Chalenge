@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="60dp"
     tools:context=".HistoryFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,10 +13,10 @@
         android:id="@+id/textViewHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Riwayat Permainan"
-        android:textSize="24sp"
+        android:text="Riwayat"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,9 +25,8 @@
         android:id="@+id/rvHistory"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+
         app:layout_constraintTop_toBottomOf="@+id/textViewHistory"
         app:layout_constraintBottom_toBottomOf="parent"
         android:padding="16dp"/>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
