@@ -20,17 +20,17 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
-        val Email = findViewById<EditText>(R.id.editTextTextEmailAddress)
-        val Password = findViewById<EditText>(R.id.editTextTextPassword)
-        val btnLogin = findViewById<Button>(R.id.button)
+        val UserName = findViewById<EditText>(R.id.editTextUserName)
+        val Email = findViewById<EditText>(R.id.editTextEmail)
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
 
         btnLogin.setOnClickListener {
+            val username = UserName.text.toString()
             val email = Email.text.toString()
-            val password = Password.text.toString()
 
-            if (email.isEmpty() || password.isEmpty()) {
-                Email.error = "Email harus diisi"
-                Password.error = "Password harus diisi"
+            if (username.isEmpty() || email.isEmpty()) {
+                UserName.error = "Email harus diisi"
+                Email.error = "Password harus diisi"
                 return@setOnClickListener
             }
             else {
