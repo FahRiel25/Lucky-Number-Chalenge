@@ -39,14 +39,19 @@ class GameFragment : Fragment(R.layout.fragment_game) {
             }
 
             if (listData.isNotEmpty()) {
-                val hasil = listData.random()
+                val randomIndex = (0 until listData.size).random()
+                val angkaRandom = randomIndex + 1
+                val hukumanTerpilih = listData[randomIndex]
 
                 val intent = Intent(requireContext(), ResultActivity::class.java)
-                intent.putExtra("HASIL", hasil)
+                intent.putExtra("ANGKA", angkaRandom)
+                intent.putExtra("HUKUMAN", hukumanTerpilih)
                 startActivity(intent)
+
             } else {
                 Toast.makeText(requireContext(), "Isi dulu datanya!", Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 }

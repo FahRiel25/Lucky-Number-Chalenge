@@ -11,11 +11,15 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val tvHasil = findViewById<TextView>(R.id.tvHasil)
+        val tvAngka = findViewById<TextView>(R.id.tvAngka)
+        val tvHukuman = findViewById<TextView>(R.id.tvHukuman)
         val btnBack = findViewById<Button>(R.id.btnBack)
 
-        val hasil = intent.getStringExtra("HASIL")
-        tvHasil.text = hasil
+        val angka = intent.getIntExtra("ANGKA", 0)
+        val hukuman = intent.getStringExtra("HUKUMAN")
+
+        tvAngka.text = angka.toString()
+        tvHukuman.text = hukuman ?: "-"
 
         btnBack.setOnClickListener {
             finish()

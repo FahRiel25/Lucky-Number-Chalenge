@@ -7,18 +7,36 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Hasil Random"
-        android:textSize="22sp"
+        android:text="Angka yang Keluar"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+
     <TextView
-        android:id="@+id/tvHasil"
-        android:text="---"
-        android:textSize="32sp"
+        android:id="@+id/tvAngka"
+        android:text="0"
+        android:textSize="36sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Hukumannya adalah:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvHukuman"
+        android:text="---"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
