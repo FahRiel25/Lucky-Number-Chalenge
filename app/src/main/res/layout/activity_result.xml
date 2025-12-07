@@ -1,50 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
 
-    <TextView
-        android:text="Angka yang Keluar"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-
-    <TextView
-        android:id="@+id/tvAngka"
-        android:text="0"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="Hukumannya adalah:"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="32dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/tvHukuman"
-        android:text="---"
-        android:textSize="20sp"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btnBack"
-        android:text="Try Again"
-        android:layout_marginTop="40dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="24dp"
+            android:orientation="vertical">
+
+            <!-- CARD UTAMA -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_white"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logodice"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LUCKY NUMBER\nCHALLENGE"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="28dp"
+                    android:padding="20dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Angka yang keluar"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvAngka"
+                        android:text="0"
+                        android:textSize="50sp"
+                        android:textStyle="bold"
+                        android:textColor="#7F5AF0"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="28dp"
+                    android:padding="20dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Hukumannya adalah"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#7F5AF0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvHukuman"
+                        android:text="---"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:text="TRY AGAIN"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/btn_gradient"
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
