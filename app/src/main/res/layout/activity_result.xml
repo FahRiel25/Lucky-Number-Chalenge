@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient">
+    android:background="@drawable/bg_gradient_full">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:text="Angka yang keluar"
+                        android:text="🎉Angka yang keluar adalah!!!🎉"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#444"
@@ -95,13 +95,23 @@
                         android:textColor="#444"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvSiapa"
+                        android:text="Siapa nih yang kena 😭🤯😝"
+                        android:textSize="16sp"
+                        android:textColor="#555"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/btnBack"
                     android:text="TRY AGAIN"
                     android:textColor="#FFFFFF"
-                    android:background="@drawable/btn_gradient"
+                    android:background="@drawable/bg_button_gradient"
                     android:layout_marginTop="32dp"
                     android:layout_width="match_parent"
                     android:layout_height="54dp"/>
