@@ -29,8 +29,8 @@ class LoginActivity : AppCompatActivity() {
             val email = Email.text.toString()
 
             if (username.isEmpty() || email.isEmpty()) {
-                UserName.error = "Email harus diisi"
-                Email.error = "Password harus diisi"
+                UserName.error = "Username harus diisi"
+                Email.error = "Email harus diisi"
                 return@setOnClickListener
             }
             else {
